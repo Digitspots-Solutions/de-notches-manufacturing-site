@@ -1,0 +1,42 @@
+{
+  "businessName": "De_Notches Manufacturing",
+  "industry": "Manufacturing",
+  "tone": "professional",
+  "tagline": "Precision Engineering, Quality Manufacturing",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "De_Notches Manufacturing - Your Trusted Partner in Quality Production. Located in the heart of Enugu, we deliver precision-engineered manufacturing solutions that meet international standards. Experience excellence in every product we create.",
+      "imagePrompt": "Modern Nigerian manufacturing facility exterior with clean industrial architecture, bright daylight, professional workers in safety gear visible through large windows, Enugu cityscape in background, high-quality industrial equipment visible, sharp focus, photorealistic, professional photography",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "De_Notches Manufacturing is a leading manufacturing company based in Enugu South, Nigeria. We pride ourselves on delivering high-quality manufactured products that serve the needs of businesses and individuals across Nigeria. Our state-of-the-art facility at Amechi Road, Awkunanaw combines modern technology with skilled craftsmanship to ensure every product meets rigorous quality standards. With years of experience in the manufacturing sector, we understand the unique needs of the Nigerian market and are committed to providing reliable, durable, and cost-effective manufacturing solutions. Our team of dedicated professionals works tirelessly to maintain our reputation as a trusted manufacturing partner in Enugu and beyond.",
+      "imagePrompt": "Interior of a well-organized Nigerian manufacturing workshop, skilled Nigerian workers operating modern machinery, clean industrial environment, natural lighting through skylights, quality control station visible, professional atmosphere, photorealistic industrial photography",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "Custom Manufacturing Solutions: Tailored production services to meet your specific requirements and industry standards.\n\nQuality Control & Assurance: Rigorous testing and inspection processes ensure every product meets international quality benchmarks.\n\nProduct Design & Development: Expert consultation and prototyping services to bring your manufacturing ideas to life.\n\nBulk Production: Efficient large-scale manufacturing capabilities with consistent quality and timely delivery.\n\nMaintenance & Support: Comprehensive after-sales support and maintenance services for all our manufactured products.",
+      "imagePrompt": "Collage-style composition showing different aspects of Nigerian manufacturing: precision tools, quality inspection with calipers, workers assembling products, finished goods on display, modern factory floor, bright professional lighting, photorealistic documentation style",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Ready to discuss your manufacturing needs? Get in touch with De_Notches Manufacturing today. Our team is available to answer your questions, provide quotes, and schedule consultations.\n\nVisit our facility at No 102 Amechi Road Awkunanaw, Enugu South, Enugu State, or reach us by phone and email. We look forward to partnering with you on your next manufacturing project.",
+      "imagePrompt": "Professional Nigerian business contact scene, modern office reception area in Enugu, friendly staff member at desk with phone and computer, map of Enugu South visible on wall, welcoming atmosphere, natural lighting, professional business photography",
+      "layout": "default"
+    }
+  ],
+  "contact": {
+    "phone": "+234 803 612 0067",
+    "email": "info@denotches.com",
+    "address": "No 102 Amechi Road Awkunanaw, Enugu South, Enugu State, Nigeria",
+    "whatsapp": "https://wa.me/2348036120067"
+  }
+}
