@@ -1,42 +1,49 @@
 {
-  "businessName": "De_Notches Manufacturing",
-  "industry": "Manufacturing",
-  "tone": "professional",
-  "tagline": "Precision Engineering, Quality Manufacturing",
+  "businessName": "Godswill Digital Payments Limited",
+  "industry": "Fintech",
+  "tone": "professional and trustworthy",
+  "tagline": "Secure Digital Payment Solutions for Modern Nigeria",
   "sections": [
     {
       "id": "hero",
-      "name": "Hero",
-      "copy": "De_Notches Manufacturing - Your Trusted Partner in Quality Production. Located in the heart of Enugu, we deliver precision-engineered manufacturing solutions that meet international standards. Experience excellence in every product we create.",
-      "imagePrompt": "Modern Nigerian manufacturing facility exterior with clean industrial architecture, bright daylight, professional workers in safety gear visible through large windows, Enugu cityscape in background, high-quality industrial equipment visible, sharp focus, photorealistic, professional photography",
+      "name": "Hero Section",
+      "copy": "Welcome to Godswill Digital Payments Limited\n\nSecure Digital Payment Solutions for Modern Nigeria\n\nEmpowering businesses and individuals across Nigeria with fast, secure, and reliable digital payment infrastructure. From mobile money transfers to merchant solutions, we're building the future of financial transactions in Enugu and beyond.",
+      "imagePrompt": "Modern Nigerian fintech office environment in Enugu with sleek glass buildings, professional African businesspeople using smartphones for digital payments, vibrant blue and green tech-forward color scheme, natural lighting, contemporary architectural elements, photorealistic, high quality, professional photography",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "De_Notches Manufacturing is a leading manufacturing company based in Enugu South, Nigeria. We pride ourselves on delivering high-quality manufactured products that serve the needs of businesses and individuals across Nigeria. Our state-of-the-art facility at Amechi Road, Awkunanaw combines modern technology with skilled craftsmanship to ensure every product meets rigorous quality standards. With years of experience in the manufacturing sector, we understand the unique needs of the Nigerian market and are committed to providing reliable, durable, and cost-effective manufacturing solutions. Our team of dedicated professionals works tirelessly to maintain our reputation as a trusted manufacturing partner in Enugu and beyond.",
-      "imagePrompt": "Interior of a well-organized Nigerian manufacturing workshop, skilled Nigerian workers operating modern machinery, clean industrial environment, natural lighting through skylights, quality control station visible, professional atmosphere, photorealistic industrial photography",
+      "copy": "About Godswill PayTech Solutions\n\nGodswill Digital Payments Limited is a leading fintech company based in Enugu, Nigeria, dedicated to revolutionizing the way Nigerians conduct financial transactions. We provide cutting-edge digital payment solutions that bridge the gap between traditional banking and modern commerce.\n\nOur mission is to create a seamless, secure, and accessible payment ecosystem that empowers businesses of all sizes and individuals to participate fully in Nigeria's growing digital economy. With robust technology infrastructure and a deep understanding of local payment challenges, we deliver solutions that work reliably in the Nigerian context.\n\nHeadquartered at No 102 Amechi Road, Awkunanaw in Enugu South, we serve clients across Enugu State and throughout Nigeria, combining international fintech standards with local market expertise.",
+      "imagePrompt": "Professional Nigerian fintech team collaborating in a modern office space in Enugu, diverse group of African professionals working with digital tablets and financial technology displays, warm natural lighting, contemporary Nigerian business environment, charts showing growth and digital transformation, photorealistic, corporate photography style",
       "layout": "split"
     },
     {
       "id": "services",
       "name": "Our Services",
-      "copy": "Custom Manufacturing Solutions: Tailored production services to meet your specific requirements and industry standards.\n\nQuality Control & Assurance: Rigorous testing and inspection processes ensure every product meets international quality benchmarks.\n\nProduct Design & Development: Expert consultation and prototyping services to bring your manufacturing ideas to life.\n\nBulk Production: Efficient large-scale manufacturing capabilities with consistent quality and timely delivery.\n\nMaintenance & Support: Comprehensive after-sales support and maintenance services for all our manufactured products.",
-      "imagePrompt": "Collage-style composition showing different aspects of Nigerian manufacturing: precision tools, quality inspection with calipers, workers assembling products, finished goods on display, modern factory floor, bright professional lighting, photorealistic documentation style",
+      "copy": "Digital Payment Solutions\n\nMobile Money Transfers\nInstant peer-to-peer transfers with industry-leading security. Send money across Nigeria quickly and safely using our mobile platform. Zero hidden fees, real-time transaction confirmation, and 24/7 availability.\n\nMerchant Payment Solutions\nAccept digital payments from customers with ease. We provide POS terminals, online payment gateways, and integration APIs that work seamlessly with your business operations. Boost sales and improve cash flow management.\n\nBill Payment Services\nUtility bills, airtime, data bundles, cable TV subscriptions, and more. Pay all your bills from one secure platform. Enjoy instant processing and automated receipt generation.\n\nAgent Banking Network\nJoin our growing network of payment agents across Enugu and Nigeria. Earn commission while providing essential financial services to your community. Full training and technical support provided.\n\nBulk Payment Processing\nPerfect for businesses managing staff salaries, supplier payments, or customer refunds. Process hundreds of transactions simultaneously with enterprise-grade security and detailed reporting.\n\nAPI Integration Services\nDevelopers and businesses can integrate our payment infrastructure into their platforms. Comprehensive documentation, sandbox environment, and dedicated technical support ensure smooth implementation.",
+      "imagePrompt": "Split screen montage showing various Nigerian digital payment scenarios: young entrepreneur using POS terminal in a Lagos market, professional woman paying bills on smartphone, small business owner checking transaction dashboard, agent banker serving customers in a neighborhood shop, photorealistic Nigerian business contexts, vibrant and trustworthy atmosphere",
       "layout": "grid"
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose Godswill PayTech",
+      "copy": "Why Businesses Trust Godswill PayTech Solutions\n\nLocal Expertise, Global Standards\nWe understand the unique challenges of the Nigerian payment landscape while implementing international security and reliability standards.\n\nBank-Level Security\nYour transactions are protected by advanced encryption, multi-factor authentication, and continuous fraud monitoring systems.\n\nFast Settlement Times\nGet your money quickly. We process settlements faster than traditional providers, improving your business cash flow.\n\nDedicated Support Team\nOur Nigeria-based customer support team is available when you need them. Real people who understand your business challenges.\n\nCompetitive Pricing\nTransparent fee structure with no hidden charges. We believe great service shouldn't break the bank.\n\nProven Reliability\nMinimal downtime, maximum uptime. Our robust infrastructure ensures your business keeps running smoothly.",
+      "imagePrompt": "Professional infographic-style composition showing Nigerian fintech security features: digital padlock icons, shield symbols, Nigerian naira currency symbols, mobile phone with secure payment interface, trust badges, modern blue and green color palette, clean corporate design, photorealistic 3D elements against crisp white background",
+      "layout": "cards"
     },
     {
       "id": "contact",
       "name": "Contact Us",
-      "copy": "Ready to discuss your manufacturing needs? Get in touch with De_Notches Manufacturing today. Our team is available to answer your questions, provide quotes, and schedule consultations.\n\nVisit our facility at No 102 Amechi Road Awkunanaw, Enugu South, Enugu State, or reach us by phone and email. We look forward to partnering with you on your next manufacturing project.",
-      "imagePrompt": "Professional Nigerian business contact scene, modern office reception area in Enugu, friendly staff member at desk with phone and computer, map of Enugu South visible on wall, welcoming atmosphere, natural lighting, professional business photography",
-      "layout": "default"
+      "copy": "Get in Touch with Godswill PayTech\n\nReady to transform your payment operations? Our team is here to help you get started.\n\nVisit Our Office\nNo 102 Amechi Road, Awkunanaw\nEnugu South, Enugu State\nNigeria\n\nCall Us\n+234 803 612 0067\nMonday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM\n\nWhatsApp\nQuick responses via WhatsApp for urgent inquiries\n\nEmail\ninfo@godswillng.org\nsupport@godswillng.org\n\nWhether you're a small business looking to accept digital payments, an entrepreneur wanting to join our agent network, or an enterprise seeking bulk payment solutions, we're ready to discuss how Godswill Digital Payments can serve your needs.",
+      "imagePrompt": "Professional Nigerian business contact section showing the Enugu cityscape with prominent roads, modern office building exterior, friendly African customer service representative with headset smiling warmly, smartphone displaying contact interface, map pin indicating Enugu location, warm welcoming atmosphere, photorealistic, high quality business photography",
+      "layout": "split"
     }
   ],
   "contact": {
     "phone": "+234 803 612 0067",
-    "email": "info@denotches.com",
-    "address": "No 102 Amechi Road Awkunanaw, Enugu South, Enugu State, Nigeria",
+    "email": "info@godswillng.org",
+    "address": "No 102 Amechi Road, Awkunanaw, Enugu South, Enugu State, Nigeria",
     "whatsapp": "https://wa.me/2348036120067"
   }
 }
