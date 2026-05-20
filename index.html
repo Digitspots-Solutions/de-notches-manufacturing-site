@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De_Notches Manufacturing - Precision Engineering, Quality Manufacturing</title>
+    <title>Godswill Digital Payments Limited - Secure Digital Payment Solutions for Modern Nigeria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Figtree:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #2b1800;
-            --color-accent: #fa9316;
-            --color-bg: #FAF0E8;
-            --color-text: #180A00;
-            --color-surface: #220e00;
-            --color-secondary-accent: #7ca1b0;
-            --font-display: 'Exo 2', sans-serif;
-            --font-body: 'Outfit', sans-serif;
-            --border-radius: 0px;
+            --color-primary: #261805;
+            --color-accent: #df7507;
+            --color-bg: #FFF6EE;
+            --color-text: #180C04;
+            --color-surface: #241209;
+            --color-secondary-accent: #20b260;
+            --font-display: 'Jost', sans-serif;
+            --font-body: 'Figtree', sans-serif;
+            --border-radius: 20px;
         }
 
         * {
@@ -39,8 +39,7 @@
 
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
-            font-weight: 800;
-            line-height: 1.2;
+            font-weight: 600;
         }
 
         @keyframes fadeUp {
@@ -58,15 +57,15 @@
         nav {
             position: sticky;
             top: 0;
-            background: rgba(250, 240, 232, 0.95);
+            background: rgba(255, 246, 238, 0.95);
             backdrop-filter: blur(10px);
+            padding: 1rem 0;
             z-index: 1000;
-            padding: 1.25rem 0;
-            box-shadow: 4px 4px 0 var(--color-surface);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
-        nav .container {
-            max-width: 1400px;
+        .nav-container {
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
@@ -74,18 +73,18 @@
             align-items: center;
         }
 
-        nav .logo {
+        .nav-logo {
             font-family: var(--font-display);
             font-size: 1.5rem;
-            font-weight: 800;
+            font-weight: 700;
             color: var(--color-primary);
             text-decoration: none;
         }
 
         .nav-links {
             display: flex;
+            gap: 2rem;
             list-style: none;
-            gap: 2.5rem;
         }
 
         .nav-links a {
@@ -93,29 +92,12 @@
             color: var(--color-text);
             font-weight: 500;
             transition: color 0.3s ease;
-            position: relative;
         }
 
         .nav-links a:hover {
             color: var(--color-accent);
         }
 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: var(--color-accent);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
@@ -143,7 +125,6 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
-        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
@@ -151,7 +132,7 @@
             width: 300px;
             height: calc(100vh - 70px);
             background: var(--color-bg);
-            box-shadow: -4px 4px 0 var(--color-surface);
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -186,7 +167,7 @@
         /* Hero Section */
         #hero {
             position: relative;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -196,21 +177,17 @@
             animation: fadeUp 0.6s ease forwards;
         }
 
-        #hero::before {
-            content: '';
+        .hero-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://images.pexels.com/photos/3089681/pexels-photo-3089681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-            background-size: cover;
-            background-position: center;
+            object-fit: cover;
             z-index: 1;
         }
 
-        #hero::after {
-            content: '';
+        .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
@@ -228,61 +205,56 @@
         }
 
         .hero-content h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             margin-bottom: 1.5rem;
-            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+        }
+
+        .hero-content .tagline {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
         }
 
         .hero-content p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
             line-height: 1.8;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1rem 3rem;
+            padding: 1rem 2.5rem;
             background: var(--color-accent);
-            color: var(--color-primary);
+            color: white;
             text-decoration: none;
-            font-weight: 700;
-            font-family: var(--font-display);
+            border-radius: var(--border-radius);
+            font-weight: 600;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 6px 6px 0 var(--color-primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(223, 117, 7, 0.3);
         }
 
         .cta-button:hover {
-            transform: translate(2px, 2px);
-            box-shadow: 4px 4px 0 var(--color-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(223, 117, 7, 0.4);
         }
 
-        /* Section Styles */
+        /* Section Base */
         section {
             padding: 80px 2rem;
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
-        section h2 {
-            font-size: 3rem;
+        .section-title {
+            font-size: 2.5rem;
             margin-bottom: 3rem;
+            text-align: center;
             color: var(--color-primary);
-            position: relative;
-            padding-bottom: 1rem;
-        }
-
-        section h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100px;
-            height: 4px;
-            background: var(--color-accent);
         }
 
         /* About Section */
@@ -295,21 +267,26 @@
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: center;
         }
 
         .about-image {
             width: 100%;
-            height: 500px;
-            object-fit: cover;
-            box-shadow: 8px 8px 0 var(--color-surface);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
         }
 
         .about-text p {
+            margin-bottom: 1.5rem;
             font-size: 1.1rem;
             line-height: 1.8;
-            color: var(--color-text);
         }
 
         /* Services Section */
@@ -321,62 +298,92 @@
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
+            gap: 2rem;
             margin-top: 3rem;
         }
 
         .service-card {
             background: white;
-            padding: 2.5rem;
-            box-shadow: 6px 6px 0 var(--color-surface);
-            transition: all 0.3s ease;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .service-card:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 8px 8px 0 var(--color-surface);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
 
         .service-card h3 {
             font-size: 1.5rem;
-            color: var(--color-primary);
             margin-bottom: 1rem;
-            border-left: 4px solid var(--color-accent);
-            padding-left: 1rem;
+            color: var(--color-accent);
         }
 
         .service-card p {
-            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        /* Why Choose Us Section */
+        #why-choose-us {
+            background: white;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .why-card {
+            background: var(--color-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-accent);
+            transition: transform 0.3s ease;
+        }
+
+        .why-card:hover {
+            transform: translateX(5px);
+        }
+
+        .why-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .why-card p {
             line-height: 1.7;
         }
 
         /* Contact Section */
         #contact {
-            background: var(--color-surface);
-            color: white;
             animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.3s;
-        }
-
-        #contact h2 {
-            color: var(--color-accent);
-        }
-
-        #contact h2::after {
-            background: white;
+            animation-delay: 0.4s;
         }
 
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            margin-top: 3rem;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
         }
 
         .contact-info p {
+            margin-bottom: 2rem;
             font-size: 1.1rem;
             line-height: 1.8;
-            margin-bottom: 2rem;
         }
 
         .contact-details {
@@ -387,18 +394,17 @@
 
         .contact-item {
             display: flex;
-            align-items: flex-start;
-            gap: 1rem;
+            flex-direction: column;
+            gap: 0.5rem;
         }
 
         .contact-item strong {
-            min-width: 80px;
             color: var(--color-accent);
-            font-family: var(--font-display);
+            font-size: 1.1rem;
         }
 
         .contact-item a {
-            color: white;
+            color: var(--color-text);
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -409,41 +415,8 @@
 
         .contact-image {
             width: 100%;
-            height: 400px;
-            object-fit: cover;
-            box-shadow: 8px 8px 0 var(--color-accent);
-        }
-
-        .whatsapp-btn {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 1rem 2rem;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
-            font-weight: 700;
-            font-family: var(--font-display);
-            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .whatsapp-btn:hover {
-            transform: translate(2px, 2px);
-            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--color-primary);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.4s;
-        }
-
-        footer p {
-            font-size: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
 
         /* WhatsApp Floating Button */
@@ -451,27 +424,33 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
+            background: #25D366;
+            color: white;
             width: 60px;
             height: 60px;
-            background: #25D366;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            transition: all 0.3s ease;
+            font-size: 2rem;
             text-decoration: none;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: transform 0.3s ease;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
         }
 
-        .whatsapp-float svg {
-            width: 35px;
-            height: 35px;
-            fill: white;
+        /* Footer */
+        footer {
+            background: var(--color-surface);
+            color: var(--color-bg);
+            text-align: center;
+            padding: 2rem;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.5s;
         }
 
         /* Responsive */
@@ -481,11 +460,11 @@
             }
 
             .hero-content h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
 
-            section h2 {
-                font-size: 2.5rem;
+            .hero-content .tagline {
+                font-size: 1.5rem;
             }
         }
 
@@ -506,35 +485,31 @@
                 font-size: 2rem;
             }
 
+            .hero-content .tagline {
+                font-size: 1.3rem;
+            }
+
             .hero-content p {
                 font-size: 1rem;
             }
 
-            section h2 {
-                font-size: 2rem;
-                margin-bottom: 2rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .about-image {
-                height: 300px;
-            }
-
+            .about-content,
             .contact-content {
                 grid-template-columns: 1fr;
-                gap: 2rem;
             }
 
+            .about-image,
             .contact-image {
-                height: 300px;
+                order: -1;
             }
 
-            .services-grid {
-                gap: 1.5rem;
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .services-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
             }
 
             .whatsapp-float {
@@ -542,23 +517,21 @@
                 right: 20px;
                 width: 50px;
                 height: 50px;
-            }
-
-            .whatsapp-float svg {
-                width: 28px;
-                height: 28px;
+                font-size: 1.5rem;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
-        <div class="container">
-            <a href="#" class="logo">De_Notches Manufacturing</a>
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Godswill PayTech</a>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -569,102 +542,149 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
     <div class="mobile-menu">
         <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose-us">Why Us</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
+    <!-- Hero Section -->
     <section id="hero">
+        <img src="https://images.pexels.com/photos/30677717/pexels-photo-30677717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hero Background" class="hero-bg">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>De_Notches Manufacturing</h1>
-            <p>De_Notches Manufacturing - Your Trusted Partner in Quality Production. Located in the heart of Enugu, we deliver precision-engineered manufacturing solutions that meet international standards. Experience excellence in every product we create.</p>
+            <h1>Welcome to Godswill Digital Payments Limited</h1>
+            <p class="tagline">Secure Digital Payment Solutions for Modern Nigeria</p>
+            <p>Empowering businesses and individuals across Nigeria with fast, secure, and reliable digital payment infrastructure. From mobile money transfers to merchant solutions, we're building the future of financial transactions in Enugu and beyond.</p>
             <a href="#contact" class="cta-button">Get Started</a>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2>About Us</h2>
             <div class="about-content">
-                <img src="https://images.pexels.com/photos/14804699/pexels-photo-14804699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="De_Notches Manufacturing Workshop" class="about-image">
+                <img src="https://images.pexels.com/photos/37198880/pexels-photo-37198880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Godswill PayTech Solutions" class="about-image">
                 <div class="about-text">
-                    <p>De_Notches Manufacturing is a leading manufacturing company based in Enugu South, Nigeria. We pride ourselves on delivering high-quality manufactured products that serve the needs of businesses and individuals across Nigeria. Our state-of-the-art facility at Amechi Road, Awkunanaw combines modern technology with skilled craftsmanship to ensure every product meets rigorous quality standards. With years of experience in the manufacturing sector, we understand the unique needs of the Nigerian market and are committed to providing reliable, durable, and cost-effective manufacturing solutions. Our team of dedicated professionals works tirelessly to maintain our reputation as a trusted manufacturing partner in Enugu and beyond.</p>
+                    <h2>About Godswill PayTech Solutions</h2>
+                    <p>Godswill Digital Payments Limited is a leading fintech company based in Enugu, Nigeria, dedicated to revolutionizing the way Nigerians conduct financial transactions. We provide cutting-edge digital payment solutions that bridge the gap between traditional banking and modern commerce.</p>
+                    <p>Our mission is to create a seamless, secure, and accessible payment ecosystem that empowers businesses of all sizes and individuals to participate fully in Nigeria's growing digital economy. With robust technology infrastructure and a deep understanding of local payment challenges, we deliver solutions that work reliably in the Nigerian context.</p>
+                    <p>Headquartered at No 102 Amechi Road, Awkunanaw in Enugu South, we serve clients across Enugu State and throughout Nigeria, combining international fintech standards with local market expertise.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2 class="section-title">Digital Payment Solutions</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Custom Manufacturing Solutions</h3>
-                    <p>Tailored production services to meet your specific requirements and industry standards.</p>
+                    <h3>Mobile Money Transfers</h3>
+                    <p>Instant peer-to-peer transfers with industry-leading security. Send money across Nigeria quickly and safely using our mobile platform. Zero hidden fees, real-time transaction confirmation, and 24/7 availability.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Quality Control & Assurance</h3>
-                    <p>Rigorous testing and inspection processes ensure every product meets international quality benchmarks.</p>
+                    <h3>Merchant Payment Solutions</h3>
+                    <p>Accept digital payments from customers with ease. We provide POS terminals, online payment gateways, and integration APIs that work seamlessly with your business operations. Boost sales and improve cash flow management.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Product Design & Development</h3>
-                    <p>Expert consultation and prototyping services to bring your manufacturing ideas to life.</p>
+                    <h3>Bill Payment Services</h3>
+                    <p>Utility bills, airtime, data bundles, cable TV subscriptions, and more. Pay all your bills from one secure platform. Enjoy instant processing and automated receipt generation.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Bulk Production</h3>
-                    <p>Efficient large-scale manufacturing capabilities with consistent quality and timely delivery.</p>
+                    <h3>Agent Banking Network</h3>
+                    <p>Join our growing network of payment agents across Enugu and Nigeria. Earn commission while providing essential financial services to your community. Full training and technical support provided.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Maintenance & Support</h3>
-                    <p>Comprehensive after-sales support and maintenance services for all our manufactured products.</p>
+                    <h3>Bulk Payment Processing</h3>
+                    <p>Perfect for businesses managing staff salaries, supplier payments, or customer refunds. Process hundreds of transactions simultaneously with enterprise-grade security and detailed reporting.</p>
+                </div>
+                <div class="service-card">
+                    <h3>API Integration Services</h3>
+                    <p>Developers and businesses can integrate our payment infrastructure into their platforms. Comprehensive documentation, sandbox environment, and dedicated technical support ensure smooth implementation.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Businesses Trust Godswill PayTech Solutions</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Local Expertise, Global Standards</h3>
+                    <p>We understand the unique challenges of the Nigerian payment landscape while implementing international security and reliability standards.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Bank-Level Security</h3>
+                    <p>Your transactions are protected by advanced encryption, multi-factor authentication, and continuous fraud monitoring systems.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Fast Settlement Times</h3>
+                    <p>Get your money quickly. We process settlements faster than traditional providers, improving your business cash flow.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Dedicated Support Team</h3>
+                    <p>Our Nigeria-based customer support team is available when you need them. Real people who understand your business challenges.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Competitive Pricing</h3>
+                    <p>Transparent fee structure with no hidden charges. We believe great service shouldn't break the bank.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Proven Reliability</h3>
+                    <p>Minimal downtime, maximum uptime. Our robust infrastructure ensures your business keeps running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>Ready to discuss your manufacturing needs? Get in touch with De_Notches Manufacturing today. Our team is available to answer your questions, provide quotes, and schedule consultations.</p>
-                    <p>Visit our facility at No 102 Amechi Road Awkunanaw, Enugu South, Enugu State, or reach us by phone and email. We look forward to partnering with you on your next manufacturing project.</p>
+                    <h2>Get in Touch with Godswill PayTech</h2>
+                    <p>Ready to transform your payment operations? Our team is here to help you get started.</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <strong>Phone:</strong>
+                            <strong>Visit Our Office</strong>
+                            <span>No 102 Amechi Road, Awkunanaw<br>Enugu South, Enugu State<br>Nigeria</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Call Us</strong>
                             <a href="tel:+2348036120067">+234 803 612 0067</a>
+                            <span>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 2:00 PM</span>
                         </div>
                         <div class="contact-item">
-                            <strong>Email:</strong>
-                            <a href="mailto:info@denotches.com">info@denotches.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Address:</strong>
-                            <span>No 102 Amechi Road Awkunanaw, Enugu South, Enugu State, Nigeria</span>
+                            <strong>Email</strong>
+                            <a href="mailto:info@godswillng.org">info@godswillng.org</a>
+                            <a href="mailto:support@godswillng.org">support@godswillng.org</a>
                         </div>
                     </div>
-                    <a href="https://wa.me/2348036120067" class="whatsapp-btn" target="_blank">Message Us on WhatsApp</a>
+                    <p style="margin-top: 2rem;">Whether you're a small business looking to accept digital payments, an entrepreneur wanting to join our agent network, or an enterprise seeking bulk payment solutions, we're ready to discuss how Godswill Digital Payments can serve your needs.</p>
                 </div>
-                <img src="https://images.pexels.com/photos/30677719/pexels-photo-30677719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact De_Notches Manufacturing" class="contact-image">
+                <img src="https://images.pexels.com/photos/30677719/pexels-photo-30677719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact Godswill PayTech" class="contact-image">
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 De_Notches Manufacturing. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/2348036120067" class="whatsapp-float" target="_blank">
-        <svg viewBox="0 0 32 32">
-            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.247 1.407 1.407-5.234-0.321-0.519c-1.332-2.176-2.036-4.671-2.036-7.226 0-7.589 6.178-13.767 13.767-13.767s13.767 6.178 13.767 13.767c0 7.589-6.178 13.767-13.767 13.767zM21.815 18.607c-0.256-0.128-1.518-0.749-1.753-0.835-0.235-0.085-0.405-0.128-0.576 0.128s-0.661 0.835-0.811 1.005c-0.149 0.171-0.299 0.192-0.555 0.064-0.256-0.128-1.081-0.399-2.059-1.271-0.761-0.679-1.275-1.518-1.424-1.774s-0.016-0.394 0.112-0.522c0.115-0.115 0.256-0.299 0.384-0.448s0.171-0.256 0.256-0.427c0.085-0.171 0.043-0.32-0.021-0.448s-0.576-1.389-0.789-1.902c-0.208-0.501-0.419-0.433-0.576-0.441-0.149-0.008-0.32-0.008-0.491-0.008s-0.448 0.064-0.683 0.32c-0.235 0.256-0.896 0.875-0.896 2.136s0.917 2.477 1.045 2.648c0.128 0.171 1.803 2.753 4.368 3.861 0.61 0.264 1.086 0.422 1.456 0.539 0.613 0.195 1.171 0.168 1.611 0.102 0.491-0.073 1.518-0.621 1.733-1.22s0.215-1.114 0.149-1.22c-0.064-0.107-0.235-0.171-0.491-0.299z"/>
-        </svg>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2348036120067" class="whatsapp-float" target="_blank" rel="noopener">
+        &#x1F4AC;
     </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Godswill Digital Payments Limited. All rights reserved.</p>
+    </footer>
 
     <script>
         // Mobile menu toggle
